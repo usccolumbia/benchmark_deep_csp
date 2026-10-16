@@ -1,0 +1,61 @@
+MP20 TRAIN/VALIDATION OVERLAP AUDIT
+Date: 2026-09-29
+
+Test folder: /Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/testset_4benchmark
+Reference files: /Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/mp_20/train.csv and val.csv
+Reference split sizes: 27,136 training + 9,047 validation = 36,183 unique material IDs.
+Scope: all 3,666 test records, their on-disk CIFs, embedded JSON CIFs, and metadata.
+The testsets and reference files were not changed. Their hashes were rechecked after the audit.
+
+RESULT
+All 16 reported structural-match pairs and both reported metadata errors were reproduced.
+The supplied report has 18 rows; expanding entries shared by T180/T240 yields 23 confirmed rows.
+A full scan found additional matches beyond the supplied report.
+
+Set    Records   Direct-ID overlaps   Standard-fit records   Tighter no-scale records
+T46         46                    0                      3                          0
+T180       180                    0                     21                          7
+T240       240                    0                     24                          8
+T800       800                    0                     12                          4
+T2400     2400                    0                     46                         14
+
+Counts are distinct TEST records with at least one match, not numbers of matched pairs.
+Train and validation counts in summary.csv can overlap when one test record matches both splits.
+Across sets there are 85 unique matched test material IDs; 26 pass the tighter comparison. Do not sum the per-set counts as independent materials.
+
+INTERPRETATION
+Zero material-ID intersection does not establish absence of structural overlap. Different MP IDs can contain structures that match the training/validation examples. The earlier project documentation describes ID-based exclusion; that cannot detect these cases.
+Standard-fit results are operational matches under the stated benchmark tolerance. They are not a claim of numerically identical coordinates, nor proof that every match is the same experimentally distinguishable polymorph. The supplied report uses the word identical too broadly.
+For example, the reported Ag2S pair matches the standard tolerance but fails the tighter no-scaling check. Multiple reported pairs have normalized RMS near machine precision and also pass the tighter test.
+The tighter test provides additional evidence of near-duplicate geometry; it is not a universal leakage definition. A benchmark policy should state its matching tolerance and whether volume rescaling is allowed.
+
+T46 STANDARD-FIT MATCHES
+mp-1950989 (BaO) -> mp-1178514 (train); normalized RMS 0.106865; tighter no-scale match False.
+mp-696752 (KP(HO2)2) -> mp-23959 (train); normalized RMS 0.0518183; tighter no-scale match False.
+mp-1524551 (Zn3N2) -> mp-754553 (val); normalized RMS 0.00049281; tighter no-scale match False.
+
+CONFIRMED T240 METADATA ERRORS
+mp-1191264: metadata Sr2FeCu(PbO3)2, SG 30; actual CIF Rb2PH3SeO8, SG 7 at symprec=0.01 A.
+mp-756740: metadata Li5Fe2P2(CO7)2, SG 1; actual CIF Ba2YCu3(PbO4)2, SG 17 at symprec=0.01 A.
+The on-disk CIFs exactly equal their embedded records.json CIF strings. metadata.csv also agrees with records.json. Thus these two mismatches are already present in the JSON source records, rather than introduced solely by copying CIFs into testset_4benchmark.
+
+METHOD
+pymatgen 2026.5.4. Parsed every unique CIF text with Structure.from_str; 0 parse failures, 0 matching exceptions.
+Compared all test structures against MP20 train+val entries with the same actual elemental fractional composition. Candidate grouping used parsed CIF contents, not the potentially incorrect test metadata formulas. Checked 853 test/reference candidate pairs after reuse across byte-identical test CIFs.
+Decision: StructureMatcher.fit(test_structure, mp20_structure), symmetric=False. RMS diagnostics were computed only after fit passed; a non-null get_rms_dist alone was not used as the match decision.
+Standard parameters: ltol=0.2, stol=0.3, angle_tol=5 degrees, primitive_cell=True, scale=True, attempt_supercell=False, allow_subset=False, SpeciesComparator.
+Tighter parameters: ltol=0.01, stol=0.02, angle_tol=0.5 degrees, primitive_cell=True, scale=False, attempt_supercell=False, allow_subset=False, SpeciesComparator.
+RMS and maximum-displacement values in the CSV are normalized by the free length per atom, not distances in angstroms.
+This checks composition-preserving structural overlap with these local MP20 train/val files. It does not certify novelty against other model training corpora, anonymized prototypes, or every possible supercell/disorder matching policy.
+
+RECOMMENDED NEXT STEP
+Resolve the two mislabeled T240 records from authoritative structures before evaluating predictions. For a StructureMatcher-clean benchmark under the standard criterion, quarantine or replace every flagged match and repeat the audit on replacements. Preserve the present version and keep the replacement mapping, rather than silently changing existing benchmark results. No removals or replacements were performed.
+
+DELIVERABLES
+summary.csv / summary.json: aggregate counts and method metadata.
+structure_overlaps.csv: every matching pair, split, normalized RMS, volume ratio, and tighter-match flag.
+flagged_test_records.csv: one row per affected test record and issue.
+metadata_mismatches.csv: the two invalid record/CIF pairings.
+supplied_report_reconciliation.csv: item-by-item verification of the supplied report.
+source_manifest.json and test_inventory.csv: paths, input hashes, and record/CIF consistency.
+audit_mp20_overlap.py: reproducible audit implementation; writes only this audit output folder.

@@ -1,0 +1,13 @@
+algorithm,algo_only,mp20,library_only,none
+CrystalFlow,26,21,4,1
+MatterGen,22,19,3,0
+OMatG,19,15,3,1
+EquiCSP,19,16,2,1
+Uni-3DAR,18,15,2,1
+DiffCSP,18,15,3,0
+cond-CDVAE,13,12,1,0
+GemsDiff,13,13,0,0
+CDVAE,10,9,1,0
+TGDMat,8,7,1,0
+SymmCD,8,7,1,0
+CrystalGRW,8,8,0,0

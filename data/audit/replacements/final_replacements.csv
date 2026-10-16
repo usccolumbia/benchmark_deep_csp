@@ -1,0 +1,24 @@
+removed_id,removed_formula,category,rule,new_id,new_formula,sg,nsites,ehull,n_polymorphs,elements
+mp-2178,Yb2Ga4,non-polymorph_binary,nonpoly,mp-2455,As2Os,58,6,0.0,,As Os
+mp-1103888,YbB12,template-based_binary,common,mp-8723,AsF5,194,12,0.0,,As F
+mp-552674,ZrTaNO,quaternary_easy,common,mp-1223014,LaCeNiPt,38,4,0.03692658125000037,,Ce La Ni Pt
+mp-1190213,ReB4,template-based_binary,common,mp-510439,In2Pt3,194,20,0.0,,In Pt
+mp-1208467,Tb4Al,binary_hard,rare,mp-757234,VF4,53,10,0.01238562900000062,,F V
+mp-726253,RbLi3S2O9,polymorph_quartenary,poly,mp-1174173,Li4Mn3CoO8,10,16,0.032599283593752304,16,Co Li Mn O
+mp-1102936,Ta2Fe,template-based_binary,common,mp-569803,B2W,194,12,0.0,,B W
+mp-29225,Al4Cu2O7,ternary_hard,rare,mp-27462,AlPS4,16,12,0.013779114166666773,,Al P S
+mp-640079,Mn3Au,binary_hard,rare,mp-1205384,LaTe2,28,12,0.0010886254166564413,,La Te
+mp-1106402,Rb2TiOF5,template-based_quartenary,common,mp-1517013,NaLi(WO3)4,38,18,0.04465365651881115,,Li Na O W
+mp-20349,SmFeAsO,quartenary_hard,rare,mp-1188235,MnV2Ga2Co3,224,16,0.010387865937499186,,Co Ga Mn V
+mp-20807,SrFeAsF,quartenary_medium,medium,mp-1228907,AlGa(CuS2)2,82,8,0.0014529381249985818,,Al Cu Ga S
+mp-568382,MnBi,polymorph_binary,poly,mp-7000,SiO2,152,9,0.0,31,O Si
+mp-1231,Cr3Ga,binary_easy,common,mp-1183271,Ac3Eu,194,8,0.015198531875000754,,Ac Eu
+mp-12743,CrTe4Au,ternary_hard,rare,mp-1228945,AlCrGe,22,6,0.0235504094444412,,Al Cr Ge
+mp-1106327,Co4NiSb12,template-based_ternary,common,mp-1188878,Co8RhS8,225,17,0.0,,Co Rh S
+mp-20237,CoNiSn,ternary_easy,common,mp-1183076,Ac2AgPb,225,4,0.0,,Ac Ag Pb
+mp-2233097,MgV4SnO12,polymorph_quartenary,poly,mp-1174238,Li4Mn3CoO8,2,16,0.03288218421875211,15,Co Li Mn O
+mp-1104454,Ta4GaTe4Se4,template-based_quartenary,common,mp-3322277,CePr2Co3Si7,38,13,0.0,,Ce Co Pr Si
+mp-545788,Ba3ZnN2O,quartenary_hard,rare,mp-3204783,NaAg2PdO4,131,16,0.0,,Ag Na O Pd
+mp-21211,InFeCo2,ternary_easy,common,mp-1183068,Ac2CdGa,225,4,0.02713678687500476,,Ac Cd Ga
+mp-13287,BaCuTeF,quaternary_easy,common,mp-1220386,Nd2CuSi3Rh2,38,8,0.0,,Cu Nd Rh Si
+mp-1105110,Sr2Bi2Se3O2,non-polymorph_quartenary,nonpoly,mp-696379,BH3OF4,2,18,0.0,,B F H O

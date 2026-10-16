@@ -1,0 +1,33 @@
+{
+  "parent": "/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/testset_4benchmark_versions/v2_20260929_structure_clean",
+  "status": "validated_formula_schema",
+  "tiers": {
+    "T46": {
+      "count": 46,
+      "mislabeled": 25,
+      "needs_symmetry_review": 0
+    },
+    "T180": {
+      "count": 180,
+      "mislabeled": 99,
+      "needs_symmetry_review": 1
+    },
+    "T240": {
+      "count": 240,
+      "mislabeled": 127,
+      "needs_symmetry_review": 1
+    },
+    "T800": {
+      "count": 800,
+      "mislabeled": 0,
+      "needs_symmetry_review": 4
+    },
+    "T2400": {
+      "count": 2400,
+      "mislabeled": 0,
+      "needs_symmetry_review": 18
+    }
+  },
+  "no_generation_jobs_submitted": true,
+  "historical_results_not_relabelled": true
+}

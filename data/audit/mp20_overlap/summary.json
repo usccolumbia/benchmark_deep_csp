@@ -1,0 +1,149 @@
+{
+  "status": "complete",
+  "testsets": [
+    {
+      "test_set": "T46",
+      "test_records": 46,
+      "id_overlap_records": 0,
+      "structure_overlap_records": 3,
+      "train_overlap_records": 2,
+      "val_overlap_records": 1,
+      "strict_structure_overlap_records": 0,
+      "matched_pairs": 3,
+      "metadata_formula_mismatches": 0
+    },
+    {
+      "test_set": "T180",
+      "test_records": 180,
+      "id_overlap_records": 0,
+      "structure_overlap_records": 21,
+      "train_overlap_records": 19,
+      "val_overlap_records": 4,
+      "strict_structure_overlap_records": 7,
+      "matched_pairs": 29,
+      "metadata_formula_mismatches": 0
+    },
+    {
+      "test_set": "T240",
+      "test_records": 240,
+      "id_overlap_records": 0,
+      "structure_overlap_records": 24,
+      "train_overlap_records": 22,
+      "val_overlap_records": 5,
+      "strict_structure_overlap_records": 8,
+      "matched_pairs": 34,
+      "metadata_formula_mismatches": 2
+    },
+    {
+      "test_set": "T800",
+      "test_records": 800,
+      "id_overlap_records": 0,
+      "structure_overlap_records": 12,
+      "train_overlap_records": 6,
+      "val_overlap_records": 6,
+      "strict_structure_overlap_records": 4,
+      "matched_pairs": 12,
+      "metadata_formula_mismatches": 0
+    },
+    {
+      "test_set": "T2400",
+      "test_records": 2400,
+      "id_overlap_records": 0,
+      "structure_overlap_records": 46,
+      "train_overlap_records": 37,
+      "val_overlap_records": 11,
+      "strict_structure_overlap_records": 14,
+      "matched_pairs": 52,
+      "metadata_formula_mismatches": 0
+    }
+  ],
+  "mp20_rows": {
+    "train": 27136,
+    "val": 9047
+  },
+  "mp20_unique_material_ids": 36183,
+  "mp20_train_val_shared_ids": 0,
+  "test_records": 3666,
+  "unique_test_cif_texts": 3453,
+  "same_composition_pairs_tested": 853,
+  "parse_errors": 0,
+  "matching_errors": 0,
+  "supplied_report_rows": 18,
+  "supplied_report_expanded_rows": 23,
+  "supplied_report_reproduced_rows": 23,
+  "structure_overlap_unique_test_ids": 85,
+  "input_integrity": [
+    {
+      "test_set": "T46",
+      "records": 46,
+      "metadata_rows": 46,
+      "cif_files": 46,
+      "unique_ids": 46,
+      "missing_cif_ids": [],
+      "extra_cif_ids": []
+    },
+    {
+      "test_set": "T180",
+      "records": 180,
+      "metadata_rows": 180,
+      "cif_files": 180,
+      "unique_ids": 180,
+      "missing_cif_ids": [],
+      "extra_cif_ids": []
+    },
+    {
+      "test_set": "T240",
+      "records": 240,
+      "metadata_rows": 240,
+      "cif_files": 240,
+      "unique_ids": 240,
+      "missing_cif_ids": [],
+      "extra_cif_ids": []
+    },
+    {
+      "test_set": "T800",
+      "records": 800,
+      "metadata_rows": 800,
+      "cif_files": 800,
+      "unique_ids": 800,
+      "missing_cif_ids": [],
+      "extra_cif_ids": []
+    },
+    {
+      "test_set": "T2400",
+      "records": 2400,
+      "metadata_rows": 2400,
+      "cif_files": 2400,
+      "unique_ids": 2400,
+      "missing_cif_ids": [],
+      "extra_cif_ids": []
+    }
+  ],
+  "all_cifs_equal_json": true,
+  "all_metadata_equal_json": true,
+  "matcher": {
+    "ltol": 0.2,
+    "stol": 0.3,
+    "angle_tol": 5,
+    "primitive_cell": true,
+    "scale": true,
+    "attempt_supercell": false,
+    "allow_subset": false
+  },
+  "strict_matcher": {
+    "ltol": 0.01,
+    "stol": 0.02,
+    "angle_tol": 0.5,
+    "primitive_cell": true,
+    "scale": false,
+    "attempt_supercell": false,
+    "allow_subset": false
+  },
+  "comparator": "SpeciesComparator",
+  "decision": "StructureMatcher.fit(test, mp20), symmetric=False; get_rms_dist used only for diagnostics after fit passes",
+  "composition_preselection": "Actual CIF elemental fractional composition, rounded to 10 decimals; no metadata formula prefilter",
+  "mp20_cif_column": "cif",
+  "pymatgen_version": "2026.5.4",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+  "elapsed_seconds": 6.2
+}

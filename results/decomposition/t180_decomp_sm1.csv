@@ -1,0 +1,13 @@
+algorithm,both,tcsp_only,algo_only,neither
+CrystalFlow,89,33,26,32
+OMatG,88,34,19,39
+Uni-3DAR,87,35,18,40
+EquiCSP,83,39,19,39
+MatterGen,75,47,22,36
+DiffCSP,79,43,18,40
+cond-CDVAE,59,63,13,45
+GemsDiff,49,73,13,45
+TGDMat,42,80,8,50
+SymmCD,32,90,8,50
+CrystalGRW,15,107,8,50
+CDVAE,38,84,10,48

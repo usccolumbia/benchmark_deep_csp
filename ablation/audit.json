@@ -1,0 +1,301 @@
+{
+ "source_hashes": {
+  "queries.json": "449a7eb51e767876727f784e042a5fbf3b1bd9db2fba2143686548e1ebf688e7",
+  "references.json": "239d3321cbffb45ff3ca9abdebb2314c9e9f2b4d3e106de29688a4b880e1fee1",
+  "ambiguity_resolution.json": "fb25be9e64c84a3c2c91b97712d2106a5d8ca00a08d3227e01f34bbc45310e87",
+  "/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/mp_20/train.csv": "9c5a34b3684ff4b86d87a86c1c42298d1d28322ea0f03059d9e80ab6a2b729a7",
+  "/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/mp_20/val.csv": "68e101e777c168429d84feb5bf1c5432f1a1b625884f72499c54c4d68e7ee73a",
+  "/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/mp_20/test.csv": "6d63e5d7a607866d94014b3e8ae34f0b9f4d6a2b2332bbc50fd3ec976f487231"
+ },
+ "arms": {
+  "baseline": {
+   "train": {
+    "total": 27136,
+    "remaining": 27136,
+    "removed": 0,
+    "sha256": "98ee7b94a462dd3f8ddf0fd1fc0c2c2a6311650da3c39c23e5c0673301db7719"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 9047,
+    "removed": 0,
+    "sha256": "ef4cdda0b746d6caaadd7ec07a674f72e58958ec6a48fa0ad34443cccc3f0567"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "AB2": {
+   "train": {
+    "total": 27136,
+    "remaining": 25733,
+    "removed": 1403,
+    "sha256": "84fe26b0b70715d2c418db6a5095aba8b7de77845d0ddea7647eea682485042a"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8542,
+    "removed": 505,
+    "sha256": "227768b2ca9d06c2b8bbe8e48a79f338a11ce0751d80df70b9740c0decdddc51"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "ABC2": {
+   "train": {
+    "total": 27136,
+    "remaining": 23110,
+    "removed": 4026,
+    "sha256": "2db0a1f4e517792d09e9cbb6a8a610fdd305f53a6e2a1327b99154f2fd4e9f64"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 7696,
+    "removed": 1351,
+    "sha256": "445c1701035efaca42ad6eded9399bdb471b76b90f3597ab5eb7b8ca46e84b20"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "AB": {
+   "train": {
+    "total": 27136,
+    "remaining": 26098,
+    "removed": 1038,
+    "sha256": "5f721d4cf8a8b61674d5013c041e552b9c7180855bd0f35cef4175dc70d8ba45"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8683,
+    "removed": 364,
+    "sha256": "f1af8a9bbc78e02f044c4de6ba009ec3386203f1fe0d12c6ab7ffe9bf6abe62b"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "ABC2D6": {
+   "train": {
+    "total": 27136,
+    "remaining": 25585,
+    "removed": 1551,
+    "sha256": "3fe1a1e98f9f2c3dc478281c53a5423d126e6866f80cbcd2b6acbb4e049b7049"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8560,
+    "removed": 487,
+    "sha256": "a3723716075185a702f734c0fdd4b47125d2a17426d2cec584c79abd5db21517"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "ABC2D4": {
+   "train": {
+    "total": 27136,
+    "remaining": 26804,
+    "removed": 332,
+    "sha256": "ac7635ae7b97412bb2df0876d7381633ee288ff2479e767c49084ef62d090ecc"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8951,
+    "removed": 96,
+    "sha256": "bc9c011b19a6549ee5847fc2b29244d537498764bb4b19438769579200c19a2e"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "AB3": {
+   "train": {
+    "total": 27136,
+    "remaining": 25516,
+    "removed": 1620,
+    "sha256": "240086253c0d05be4648e44927adb784cb8b89b13d67b0d2a17ece2ec8f58e6d"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8529,
+    "removed": 518,
+    "sha256": "e580e8d3a3cbe555f6fa8798c8896bd820b6f52a7e02098f1bb0697c7fd8214c"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "AB_famframe": {
+   "train": {
+    "total": 27136,
+    "remaining": 25454,
+    "removed": 1682,
+    "sha256": "4da08c1a998fbfaa33fa6d6d9a35a6bacc31ea2f337aa267a2733573e453117c"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8451,
+    "removed": 596,
+    "sha256": "7563767acea8134d3ab89b56b8248483b016d35aa922c2b63e609eb9817bc4a1"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  },
+  "PEROV": {
+   "train": {
+    "total": 27136,
+    "remaining": 24317,
+    "removed": 2819,
+    "sha256": "b74e52e3706eab1755cb597b716f33c851feba8ddd94a80e36512d0b1b4abb9a"
+   },
+   "val": {
+    "total": 9047,
+    "remaining": 8150,
+    "removed": 897,
+    "sha256": "5ebd7ea465e72b6d3b746c4f42f85853134d68779ee29f9c1c8548b1c2eb7c2c"
+   },
+   "test": {
+    "total": 9046,
+    "remaining": 9046,
+    "removed": 0,
+    "sha256": "8b60f8be8bba168fe585ec6cd5b81e8c53803901498ebbb86fbfca9984da790e"
+   }
+  }
+ },
+ "test_family_targets": {
+  "AB2": [
+   "mp-24658",
+   "mp-11449",
+   "mp-30835",
+   "mp-11470",
+   "mp-1206704",
+   "mp-11514",
+   "mp-760",
+   "mp-361",
+   "mp-1039492",
+   "mp-1413",
+   "mp-2008",
+   "mp-2695",
+   "mp-23192",
+   "mp-1113",
+   "mp-849086",
+   "mp-569017",
+   "mp-11281",
+   "mp-1078",
+   "mp-12735",
+   "mp-30401",
+   "mp-23199",
+   "mp-570786",
+   "mp-1039467"
+  ],
+  "ABC2": [
+   "mp-20389",
+   "mp-11396",
+   "mp-1105802",
+   "mp-1183076",
+   "mp-3748",
+   "mp-754392",
+   "mp-1225328",
+   "mp-1008511",
+   "mp-28554",
+   "mp-2646991",
+   "mp-1227261",
+   "mp-1224999",
+   "mp-1029267",
+   "mp-1223099",
+   "mp-1221679",
+   "mp-1221626",
+   "mp-1221342",
+   "mp-1221559",
+   "mp-3211449",
+   "mp-1220080",
+   "mp-1216397",
+   "mp-1004373",
+   "mp-28024",
+   "mp-29239"
+  ],
+  "AB": [
+   "mp-788",
+   "mp-1641",
+   "mp-21115",
+   "mp-2187",
+   "mp-2172",
+   "mp-1018053",
+   "mp-2701",
+   "mp-684580",
+   "mp-2624",
+   "mp-2845",
+   "mp-1775",
+   "mp-1079811",
+   "mp-949",
+   "mp-570589",
+   "mp-1080451",
+   "mp-1080485",
+   "mp-1128",
+   "mp-1628",
+   "mp-1025444"
+  ],
+  "ABC2D6": [
+   "mp-6231",
+   "mp-19093",
+   "mp-19274",
+   "mp-6389",
+   "mp-16307",
+   "mp-557387",
+   "mp-6603",
+   "mp-1215245",
+   "mp-10321",
+   "mp-12449",
+   "mp-556434"
+  ],
+  "ABC2D4": [
+   "mp-1228907",
+   "mp-3204783",
+   "mp-569790",
+   "mp-768945",
+   "mp-643791",
+   "mp-754015",
+   "mp-3268930",
+   "mp-3266675"
+  ],
+  "AB3": [
+   "mp-1106395",
+   "mp-17783",
+   "mp-1001787",
+   "mp-22918",
+   "mp-570184",
+   "mp-1189793",
+   "mp-556296"
+  ]
+ },
+ "extra_arms_note": "AB3 and ABC2D4 added 2026-10-10 (same procedure); test family targets use the v3.1 T180 queries",
+ "famframe_note": "AB_famframe (2026-10-10): the whole AB family plus every train/val structure whose species-erased framework matches an AB target (build_prototype_splits.py); test unfiltered",
+ "perov_note": "PEROV (2026-10-15): the ABC2D6 family (1:1:2:6) plus every train/val structure whose species-erased framework (FrameworkComparator, ltol .2, stol .3, angle 5, primitive cells, supercells up to 2x) matches that of any of the nine perovskite-type ABC2D6 T180 targets (ablation_perov_ab3_targets.json); test unfiltered. EquiCSP only. Evaluated on the 11 ABC2D6 targets."
+}
