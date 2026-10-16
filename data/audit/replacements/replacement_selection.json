@@ -1,0 +1,11 @@
+{
+ "old_id": "mp-1183076",
+ "new_id": "mp-3576",
+ "formula": "HfGaCo2",
+ "sg": 225,
+ "nsites": 4,
+ "ehull": 0.0,
+ "split": "train",
+ "source_row": 11560,
+ "source": "/Users/jason/Downloads/project/2026-antimagentic-materials/CrystalFlow-main/data/mpts_52/train.csv"
+}

@@ -1,0 +1,3 @@
+test_set,material_id,metadata_formula,actual_formula,metadata_spacegroup,actual_spacegroup_symprec_0p01,cif_path,cif_sha256,embedded_cif_byte_match
+T240,mp-1191264,Sr2FeCu(PbO3)2,Rb2PH3SeO8,30,7,/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/testset_4benchmark/T240/cifs/mp-1191264.cif,9df80b3dc0c75e15ddca164c3d55f80b48c5e4f379112ade6c2b1a101bf2ad5a,True
+T240,mp-756740,Li5Fe2P2(CO7)2,Ba2YCu3(PbO4)2,1,17,/Users/jason/Downloads/project/2026_CSP_diagnosis_benchmark/testset_4benchmark/T240/cifs/mp-756740.cif,e3c4a22db7ae9e117813cb95f90ccb870abdfb0ad7fb7eb6fca6ad351703c4e5,True

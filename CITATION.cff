@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper below."
+title: "Deep Generative Crystal Structure Prediction: A Benchmark Study and a Controlled Test of Prototype Dependence"
+authors:
+  - {family-names: Wei, given-names: Lai}
+  - {family-names: Dong, given-names: Rongzhi}
+  - {family-names: Feng, given-names: Ying}
+  - {family-names: Miklos, given-names: Madeline}
+  - {family-names: Hu, given-names: Jianjun}
+repository-code: "https://github.com/usccolumbia/cspbenchmark"
+license: MIT

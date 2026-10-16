@@ -1,0 +1,11 @@
+algo,arm,n,base_fit,base_cons,abl_fit,abl_cons,degraded,degraded_cons
+crystalflow,AB,19,16,15,15,14,1,1
+crystalflow,AB2,23,20,19,12,12,8,7
+equicsp,AB,19,16,15,15,14,1,1
+equicsp,AB2,23,17,16,14,14,3,3
+equicsp,ABC2,24,21,21,13,13,10,10
+equicsp,ABC2D6,11,8,8,10,8,0,0
+crystalflow,ABC2,24,21,21,13,13,9,9
+crystalflow,ABC2D6,11,8,8,10,9,0,1
+equicsp,PEROV,11,8,8,7,3,2,5
+equicsp,AB3,7,3,3,2,2,1,1

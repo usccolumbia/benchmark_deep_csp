@@ -1,0 +1,6 @@
+test_set,test_records,id_overlap_records,structure_overlap_records,train_overlap_records,val_overlap_records,strict_structure_overlap_records,matched_pairs,metadata_formula_mismatches
+T46,46,0,3,2,1,0,3,0
+T180,180,0,21,19,4,7,29,0
+T240,240,0,24,22,5,8,34,2
+T800,800,0,12,6,6,4,12,0
+T2400,2400,0,46,37,11,14,52,0
